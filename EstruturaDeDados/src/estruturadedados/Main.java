@@ -14,7 +14,7 @@ public class Main {
     
     
     System.out.println("Digite aqui uma das opçoes do menu");
-    System.out.println("1-Criar Lista <\n" +
+    System.out.println("1-Criar Lista \n" +
                        "2-Inserir  Nodo no Inicio\n" +
                         "3-Inserir  Nodo no Meio\n" +
                         "4-Inserir  Nodo no Fim\n" +
@@ -26,44 +26,45 @@ public class Main {
                         "10-Fim");
     int c =t.nextInt();
     
-    
+    do{
     switch (c){
             
             case 1:
-               EstruturaDeDados.criarLista();
+               ex.criarLista();
             break;
             case 2:
-                EstruturaDeDados.iNodoI();
+                ex.iNodoI();
                 break;
             case 3:
-                EstruturaDeDados.iNodoM();
+                ex.iNodoM();
                 break;
             case 4:
-                EstruturaDeDados.iNodoF();
+                ex.iNodoF();
                 break;
             case 5:
-                EstruturaDeDados.rNodoI();
+                ex.rNodoI();
                 break;
             case 6:
-                EstruturaDeDados.rNodoF();
+                ex.rNodoF();
                 break;
             case 7:
-               EstruturaDeDados.removerLL();
+               ex.removerLL();
                break;
                        
             case 8:
-                EstruturaDeDados.imprimirLL();
+                ex.imprimirLL();
                 break;
             case 9:
-                EstruturaDeDados.imprimirLA();
+                ex.imprimirLA();
                 break;
             case 10:
-                EstruturaDeDados.fim();
+                ex.fim();
                 break;
-            
-            
-            
+    
     }
+    }while(c!=10);
+            
+    
     
 }
 }

@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class EstruturaDeDados {
     Scanner t = new Scanner(System.in);
-        int i=0,size=50;
-        String [] la = new String [size];
+        int i=25,size=50;
+        String [] la = new String [50];
         String [] ll = new String [i];
         String [] aux = new String [i];
         int Pavg = (size-i)/2+1;
