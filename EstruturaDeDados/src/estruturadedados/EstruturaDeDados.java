@@ -8,11 +8,16 @@ public class EstruturaDeDados {
         String [] la = new String [50];
         String [] ll = new String [i];
         String [] aux = new String [i];
-        int Pavg = (size-i)/2+1;
+        int Pavg =25;
           int cont =0;
    
-     
+        if(Pavg+ll.length - Pavg %2){
+            int meio = ((Pavg+ll.length -Pavg)/2) +1;
+        }else{
+            int meio = (Pavg+ll.length - Pavg +1)/2; 
         
+        }
+        meio = meio + Pavg;
 
     public  void criarLista() {
         //aloca um espaço para LL de 25 nodos dentro de LA
