@@ -8,6 +8,11 @@ public class Main {
     public static void main(String[] args) {
     Scanner t = new Scanner(System.in);
     
+    EstruturaDeDados ex;
+    ex = new EstruturaDeDados();
+    
+    
+    
     System.out.println("Digite aqui uma das opçoes do menu");
     System.out.println("1-Criar Lista <\n" +
                        "2-Inserir  Nodo no Inicio\n" +
@@ -25,26 +30,36 @@ public class Main {
     switch (c){
             
             case 1:
-                EstruturaDeDados.criarLista();
+               EstruturaDeDados.criarLista();
             break;
             case 2:
                 EstruturaDeDados.iNodoI();
+                break;
             case 3:
                 EstruturaDeDados.iNodoM();
+                break;
             case 4:
                 EstruturaDeDados.iNodoF();
+                break;
             case 5:
                 EstruturaDeDados.rNodoI();
+                break;
             case 6:
                 EstruturaDeDados.rNodoF();
+                break;
             case 7:
-                EstruturaDeDados.removerLL();
+               EstruturaDeDados.removerLL();
+               break;
+                       
             case 8:
                 EstruturaDeDados.imprimirLL();
+                break;
             case 9:
                 EstruturaDeDados.imprimirLA();
+                break;
             case 10:
                 EstruturaDeDados.fim();
+                break;
             
             
             

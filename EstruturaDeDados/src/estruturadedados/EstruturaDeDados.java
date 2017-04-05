@@ -14,7 +14,7 @@ public class EstruturaDeDados {
      
         
 
-    public static void criarLista() {
+    public  void criarLista() {
         //aloca um espaço para LL de 25 nodos dentro de LA
         for(int k=Pavg; k<Pavg+25; k++){
              for(int o=0; o<25; o++){
@@ -24,7 +24,7 @@ public class EstruturaDeDados {
         
       }
     
-    public static void iNodoI(){ 
+    public  void iNodoI(){ 
         String confI = la[ll.length];
         System.out.println("Digite o valor a ser inserido");
         String v = t.next();
@@ -86,7 +86,7 @@ public class EstruturaDeDados {
         }  
     }
     
-    public static void iNodoM(){
+    public  void iNodoM(){
         
         
         
@@ -106,7 +106,7 @@ public class EstruturaDeDados {
         
     }
     
-    public static void iNodoF(){
+    public  void iNodoF(){
         String confF = la[Pavg];
         System.out.println("Digite o valor a ser inserido");
         String v = t.next();
@@ -170,17 +170,17 @@ public class EstruturaDeDados {
         }  
     }
     
-    public static void rNodoI(){
+    public  void rNodoI(){
         //define o primeiro valor como nulo
          la[Pavg] =null;
     } 
     
-    public  static void rNodoF(){
+    public   void rNodoF(){
         //define o ultimo valor como nulo
         la[Pavg+ll.length] =null;
     }
     
-    public static void removerLL(){
+    public  void removerLL(){
         //Define o valor de LL para null
         for(int j=Pavg; j<Pavg+ll.length; j++){
             la[j] = null;
@@ -188,7 +188,7 @@ public class EstruturaDeDados {
         }
       }
     
-    public  static void imprimirLL(){
+    public   void imprimirLL(){
         //mostra os valores de LL
         for(int j=0; j<ll.length; j++){
            System.out.print (ll[j]+"==");
@@ -196,7 +196,7 @@ public class EstruturaDeDados {
         }
     }
     
-    public static  void imprimirLA(){
+    public   void imprimirLA(){
         //mostra os valores de LA
         for(int j=0; j<la.length; j++){
            System.out.print (la[j]+"==");
@@ -204,7 +204,7 @@ public class EstruturaDeDados {
         }
     }
      
-    public static void fim(){
+    public  void fim(){
         //sai do programa
         System.exit(1);
     
